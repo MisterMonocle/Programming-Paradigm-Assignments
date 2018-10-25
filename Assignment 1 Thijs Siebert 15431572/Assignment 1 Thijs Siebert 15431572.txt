@@ -1,0 +1,7 @@
+Q1) Char usually only has a size of one, while doubles usually have a size of eight. Long and Int are both 4, as expected, but each of the pointers and the pointer to a pointer all also have size 4. I had to change some things (Make the pointers not pointers) just to make sure my code worked as I wasn’t expecting a clean 4 4 4 4 4. 
+
+
+
+Q4) The memory required to read a linked list in reverse depends on how you do it. You can create a stack, push everything on and then pop it all off for O(n) memory, or you could read it forwards each time and up the node, but that requires O(1) extra memory. 
+
+A circularly double linked list would make it quite easy to read in reverse as there’s a pointer straight to the last value in the list, as well as pointers going all the way back.
